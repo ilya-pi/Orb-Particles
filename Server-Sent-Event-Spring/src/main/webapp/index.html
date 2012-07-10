@@ -8,7 +8,7 @@
 
         if (!!window.EventSource) {
             console.log("Server-Sent Events are available");
-            var source = new EventSource('//localhost:8080/sse/controller1/method1');
+            var source = new EventSource('//localhost:8080/sse/controller1/method1?param1=param1%20');
 
             source.addEventListener('message', function (e) {
                 var that = this;

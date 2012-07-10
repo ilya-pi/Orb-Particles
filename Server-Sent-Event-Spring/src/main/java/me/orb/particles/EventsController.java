@@ -2,6 +2,7 @@ package me.orb.particles;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -16,13 +17,13 @@ import java.io.PrintWriter;
 public class EventsController {
 
     @RequestMapping("method1")
-    public void sendMessage(HttpServletResponse response) throws IOException {
+    public void sendMessage(HttpServletResponse response, @RequestParam("param1") String param1) throws IOException {
         try {
             response.setContentType("text/event-stream");
             response.setCharacterEncoding("UTF-8");
             PrintWriter writer = response.getWriter();
             for (int i = 0; i < 3; i++) {
-                writer.write("data: " + i + "\n\n");
+                writer.write("data: " + param1 + i + "\n\n");
                 writer.flush();
                 Thread.sleep(5000);
             }
