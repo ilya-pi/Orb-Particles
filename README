@@ -1,3 +1,3 @@
-These are small subprojects mainly aimed to tryout either certain tehnologies or techniques and interoperation inbeetween them.
+While developing a project with limited resources, I had a need of a small, easy to grasp solutions for the generic problems of building up-to-date scalable web-application.
 
-Main focus would be to keep as less code as possible, and reduce configuration burden
+This repo gives you examples of those solutions used while building Orb.me to minify code complexity and ease future maintenance.
