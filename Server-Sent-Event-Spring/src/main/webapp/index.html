@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+
+    <script type="text/javascript">
+
+        if (!!window.EventSource) {
+            console.log("Server-Sent Events are available");
+            var source = new EventSource('//localhost:8080/sse/controller1/method1');
+
+            source.addEventListener('message', function (e) {
+                var that = this;
+                if ("close" === e.data) {
+                    console.log("close");
+                    that.close();
+                } else {
+                    console.log("message", e.data);
+                }
+            });
+
+            source.addEventListener('open', function (e) {
+                console.log("open");
+            }, false);
+
+            source.addEventListener('error', function (e) {
+                if (e.readyState == EventSource.CLOSED) {
+                    console.log("connection was closed");
+                } else {
+                    console.log("error", e.readyState, e);
+                }
+            }, false);
+        } else {
+            console.log("Server-Sent Events are not available");
+        }
+    </script>
+</head>
+
+<body>
+
+<p style="font-style: italic;">Output is in the console
+
+<div id="output"></div>
+
+</body>
+
+</html> 
+
