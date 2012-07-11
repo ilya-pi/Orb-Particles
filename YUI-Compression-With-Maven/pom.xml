@@ -1,0 +1,97 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>yui-compression-with-maven-particle</artifactId>
+    <groupId>me.orb.particles</groupId>
+    <version>0.1-SNAPSHOT</version>
+
+    <packaging>war</packaging>
+
+    <name>YUI Compression with Maven Particle</name>
+
+    <properties>
+        <org.springframework.version>3.0.5.RELEASE</org.springframework.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.alchim31.maven</groupId>
+                <artifactId>yuicompressor-maven-plugin</artifactId>
+                <version>1.2</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compress</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <nosuffix>true</nosuffix>
+                    <excludes>
+                        <exclude>**/jquery-1.7.2.min.js</exclude>
+                        <exclude>**/jquery-1.6.3.js</exclude>
+                    </excludes>
+                    <aggregations>
+                        <aggregation>
+                            <removeIncluded>true</removeIncluded>
+                            <insertNewLine>true</insertNewLine>
+                            <output>${project.build.directory}/${project.build.finalName}/application1/all1-1.js
+                            </output>
+                            <includes>
+                                <include>js/file1.js</include>
+                                <include>js/file2.js</include>
+                            </includes>
+                        </aggregation>
+                        <aggregation>
+                            <removeIncluded>true</removeIncluded>
+                            <insertNewLine>true</insertNewLine>
+                            <output>${project.build.directory}/${project.build.finalName}/application2/all2-1.js
+                            </output>
+                            <includes>
+                                <include>js/file3.js</include>
+                            </includes>
+                        </aggregation>
+                    </aggregations>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <warSourceExcludes>**/application1/js/*.js,**/application2/js/*.js</warSourceExcludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+
+        <!-- - - - - - - -
+        |   S P R I N G   |
+        \===============-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+
+        <!-- - - - - - - - -
+        |   S E R V L E T   |
+        \=================-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+</project>

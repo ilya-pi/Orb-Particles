@@ -1,0 +1,860 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    background-color: #000000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 11px;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+/* yellow text */
+#finalize a, #right_video_player .name a {
+    color: #FFF200;
+}
+
+#contact a, #signin_out a, #bio h5, h5 a {
+    color: #000;
+}
+
+#style1 a {
+    color: #fff;
+}
+
+.read_friendly a {
+    text-decoration: underline;
+}
+
+.margin_right_col {
+    margin-left: 5px;
+}
+
+#body {
+    width: 848px;
+    margin: 0 auto 0 auto;
+    position: relative;
+}
+
+#menu_holder {
+    border: 2px #000 solid;
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+
+#menu {
+    background-color: #333;
+    height: 25px;
+    color: #fff;
+    position: relative;
+    font-size: 13px;
+}
+
+#navigation {
+    color: #fff;
+    position: absolute;
+
+    top: 4px;
+    left: 10px;
+    right: 4px;
+    text-transform: uppercase;
+
+    font-size: 13px;
+
+}
+
+#navigation a {
+    color: #FFF200;
+}
+
+#search_holder {
+    position: absolute;
+    right: 0;
+    top: -1px;
+    font-size: 11px;
+    color: #FFF200;
+}
+
+#search_holder input {
+    font-size: 10px;
+    padding: 1px;
+    height: 10px;
+}
+
+#website_search {
+    background-color: #e2e2e2;
+}
+
+.search_part {
+    width: 220px;
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 9px;
+
+    vertical-align: top;
+}
+
+.website_search_item {
+    margin-top: 5px;
+
+}
+
+.logo {
+    margin: 32px 0 0 11px;
+    display: compact;
+}
+
+#page {
+
+    width: 708px;
+    position: relative;
+    background-color: #ffffff;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    vertical-align: top;
+}
+
+#intro {
+    /*background-image: url("http://stillman.nl/_images/intro_bg.png");
+     border: #333 13px solid;
+     position: absolute;
+     top: 10px;
+     left: -23px;
+
+
+     */
+    background-color: #000;
+    color: #999;
+    padding-bottom: 27px;
+    padding-top: 15px;
+    position: relative;
+
+}
+
+.line_sep {
+    width: 1px;
+    height: 330px;
+    background-color: #444;
+    position: absolute;
+    left: 430px;
+    top: 25px;
+}
+
+#intro h1 {
+    background-image: none;
+    width: auto;
+    text-align: left;
+
+}
+
+#left {
+    width: 409px;
+    margin-left: 11px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+#right {
+    width: 258px;
+    margin-left: 11px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#single_col {
+    margin-left: 11px;
+}
+
+#img {
+    text-align: center;
+    width: 200px;
+    float: left;
+    margin-right: 14px;
+    position: relative;
+
+}
+
+.clear {
+    clear: both;
+}
+
+#apply_button {
+    top: 5px;
+    right: 100px;
+    position: absolute;
+}
+
+#bio {
+    float: left;
+    width: 409px;
+    margin-left: 0px;
+}
+
+#short_info {
+    clear: both;
+    margin-top: 10px;
+    position: relative;
+}
+
+#shows {
+    position: relative;
+    margin-top: 35px;
+    width: 100%;
+}
+
+#add_show {
+    top: 0;
+    left: 0;
+}
+
+.show_item {
+    display: inline-block;
+    width: 47%;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    vertical-align: top;
+}
+
+.show_item_right {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    vertical-align: top;
+}
+
+.show_item_foot {
+    display: inline-block;
+    width: 46%;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+.event_item {
+    border-bottom: #e2e2e2 solid 1px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.agenda_info {
+    margin-top: 10px;
+}
+
+.event_front_img {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 50px;
+}
+
+.event_front_info {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 350px;
+}
+
+.agenda_item_container {
+    /*border-bottom: #e2e2e2 solid 1px;*/
+    position: relative;
+
+    margin-bottom: 15px;
+}
+
+.agenda_item_date {
+    background-color: #e2e2e2;
+    width: 89px;
+    height: 29px;
+    text-align: center;
+    padding-top: 4px;
+
+    display: inline-block;
+
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.agenda_item_none {
+    width: 89px;
+    height: 29px;
+    display: inline-block;
+}
+
+.agenda_item_date .day {
+    font-size: 20px;
+    padding-top: 20px;
+    vertical-align: baseline;
+    color: #000;
+}
+
+.agenda_item_date .month {
+    font-size: 10px;
+    color: #666;
+    vertical-align: baseline;
+}
+
+.agenda_add_info {
+    border-top: #e2e2e2 solid 1px;
+    position: relative;
+
+    display: inline-block;
+    vertical-align: top;
+
+    width: 311px;
+    margin-left: 5px;
+    padding-top: 4px;
+}
+
+#agenda_player {
+    text-align: center;
+}
+
+hr {
+    border: #e2e2e2 solid 1px;
+}
+
+#members {
+    margin-top: 35px;
+}
+
+.band_item {
+    display: inline-block;
+    position: relative;
+    font-size: 10px;
+    margin-left: 5px;
+    width: 212px;
+    height: 50px;
+    margin-bottom: 16px;
+}
+
+.band_item_search {
+    display: inline-block;
+    position: relative;
+    font-size: 10px;
+    margin-left: 5px;
+    width: 195px;
+    height: 50px;
+    margin-bottom: 16px;
+}
+
+.band_item a {
+    text-decoration: none;
+    border: 0;
+}
+
+.band_info {
+    width: 118px;
+    position: absolute;
+    bottom: 3px;
+    left: 57px;
+    text-align: left;
+}
+
+.band_info a {
+    color: #666;
+}
+
+.band_info h2 a {
+    color: #000;
+}
+
+.record_item {
+    display: inline-block;
+    position: relative;
+    font-size: 10px;
+    margin-left: 5px;
+    width: 246px;
+    margin-bottom: 16px;
+}
+
+#player .record_item {
+    display: inline-block;
+    position: relative;
+    font-size: 10px;
+    margin-left: 5px;
+    width: 400px;
+    margin-bottom: 16px;
+}
+
+#player .record_info {
+    width: 350px;
+    position: absolute;
+    bottom: 3px;
+    left: 55px;
+}
+
+.record_info {
+    width: 152px;
+    position: absolute;
+    bottom: 3px;
+    left: 55px;
+}
+
+.player_record_item {
+    position: relative;
+    font-size: 10px;
+    margin-bottom: 16px;
+}
+
+.player_record_info {
+    margin-top: 5px;
+    width: 285px;
+    position: absolute;
+    top: 0px;
+    left: 107px;
+}
+
+.play {
+    margin-top: 5px;
+    width: 285px;
+    position: absolute;
+    bottom: 3px;
+    left: 107px;
+}
+
+#player {
+    position: relative;
+    margin-top: 35px;
+    padding: 5px;
+    width: 100%;
+    border: #e2e2e2 2px solid;
+}
+
+#playlist {
+}
+
+#playlist h2 {
+    font-size: 10px;
+}
+
+.track_item {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 2px;
+    vertical-align: top;
+}
+
+h1 {
+    height: 22px;
+    width: 266px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    background-image: url(../_images/header_back.png);
+    background-repeat: no-repeat;
+    font-size: 14px;
+    padding-left: 25px;
+    padding-top: 9px;
+    color: #fff200;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin: 0;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #000;
+}
+
+h2 a {
+    color: #000;
+}
+
+h3 {
+    height: 19px;
+    width: 208px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    background-image: url(../_images/h3_back.png);
+    background-repeat: no-repeat;
+    font-size: 12px;
+    padding-left: 25px;
+    padding-top: 14px;
+    color: #fff200;
+    margin-bottom: 0;
+}
+
+h5 {
+    margin: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: normal;
+    color: #000;
+}
+
+.people_search {
+    /* background-color: #e2e2e2; */
+    padding: 5px;
+    margin-bottom: 15px;
+    border: #e2e2e2 2px solid;
+}
+
+.people_search hr {
+    border: 1px #e2e2e2 solid;
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+.people_search a {
+    margin-top: 5px;
+    color: #000;
+}
+
+.person_search_item {
+    margin-top: 5px;
+}
+
+.comment {
+    font-size: 9px;
+    font-style: italic;
+}
+
+.linkurl {
+    font-size: 10px;
+    color: #CCC;
+}
+
+#contact {
+    margin-top: 30px;
+    position: relative;
+
+}
+
+#signin_out {
+    margin-top: 30px;
+    position: relative;
+    text-align: right;
+    padding-right: 5px;
+
+}
+
+/* EDIT */
+
+#recordcover {
+    position: relative;
+    width: 95px;
+    height: 95px;
+}
+
+.imgedit {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 4px;
+
+    background-color: #fff;
+}
+
+.edit_content {
+
+    padding: 5px;
+
+    position: absolute;
+    z-index: 1000000000000;
+
+    left: 127px;
+    top: 12%;
+
+    border: #333333 solid 5px;
+
+    width: 450px;
+    margin-top: 150px;
+    background-color: #fff;
+
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+
+alpha ( opacity = 100 );
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+
+}
+
+.edit_short {
+
+    padding: 5px;
+
+    position: absolute;
+    z-index: 1000000000000;
+
+    left: 0;
+    top: 0;
+
+    border: #333333 solid 5px;
+
+    width: 450px;
+    margin-top: 150px;
+    background-color: #fff;
+
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+
+alpha ( opacity = 100 );
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+
+}
+
+.edit_content_right {
+
+    text-align: left;
+    padding: 5px;
+
+    position: absolute;
+    z-index: 10000;
+
+    left: 10px;
+    top: 11px;
+
+    border: #333333 solid 5px;
+
+    width: 90%;
+    background-color: #fff;
+
+}
+
+.edit_track {
+
+    padding: 5px;
+
+    position: absolute;
+    z-index: 1000000000000;
+
+    left: 15px;;
+    top: 40px;;
+
+    border: #333333 solid 5px;
+
+    width: 90%;
+    background-color: #fff;
+
+}
+
+.edit_record {
+
+    padding: 5px;
+
+    position: absolute;
+    z-index: 100000;
+
+    left: -105px;;
+    top: 40px;;
+
+    border: #333333 solid 5px;
+
+    width: 380px;
+    background-color: #fff;
+
+}
+
+.instrument_sort {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+#bands_members_sort_edit ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+#bands_members_sort_edit li {
+    margin-left: 10px;
+    list-style: none;
+    cursor: move;
+    margin-bottom: 2px;
+}
+
+#instruments {
+    position: relative;
+}
+
+.close {
+    width: 18px;
+    height: 19px;
+
+    position: absolute;
+
+    top: 5px;
+    right: 5px;
+}
+
+.thisweek_item {
+    margin-top: 25px;
+}
+
+/* VIDEO */
+
+.clip_item {
+    display: inline-block;
+    width: 132px;
+    margin-left: 3px;
+}
+
+#video_admin_shows {
+    background-color: #000;
+    position: relative;
+
+}
+
+#video_shows_name {
+    position: absolute;
+    left: 210px;
+    bottom: 15px;
+
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff200;
+
+}
+
+#video_shows {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#video_shows .show {
+    width: 212px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+#video_shows .show_info {
+    position: absolute;
+    left: 101px;
+    bottom: 5px;
+}
+
+#video_shows .show_name {
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #000;
+    margin-bottom: 40px;
+
+}
+
+#video_shows .show_meta {
+    color: #333;
+}
+
+#right_video_player {
+    background-color: #000000;
+}
+
+#right_video_player .name {
+
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff200;
+    margin: 5px 5px 0 10px;
+}
+
+#right_video_player .meta {
+    margin: 0px 5px 0 10px;
+}
+
+.sep {
+    height: 5px;
+    font-size: 2px;
+}
+
+/* FOOTER */
+#agenda_foot {
+    background-color: #e2e2e2;
+    padding: 10px;
+
+}
+
+#left_foot {
+    width: 409px;
+    margin-left: 11px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+#right_foot {
+    width: 258px;
+    margin-left: 11px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#foot {
+    position: relative;
+    height: 207px;
+    background-image: url(../_images/foot.png);
+    background-repeat: no-repeat;
+}
+
+#foot .space {
+    height: 30px;
+}
+
+#foot .left {
+    width: 350px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#foot ul {
+    margin: 0;
+    text-indent: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+
+#foot li {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    list-style: none;
+    text-indent: 0;
+    margin-bottom: 30px;
+}
+
+.read_friendly {
+    font-size: 12px;
+    line-height: 15px;
+
+}
+
+/* ADS ADS ADS ADS ADS ADS ADS ADS ADS ADS ADS ADS ADS ADS  */
+
+#main_ad {
+    margin-top: 15px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    background-color: #000;
+}
+
+#side_ad {
+    position: absolute;
+    right: 0;
+    top: 65px;
+    width: 120px;
+    height: 600px;
+
+    background-color: #000;
+}
